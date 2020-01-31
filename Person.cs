@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ConsoleApp1
+namespace Ergasia
 {
     class Person
     {
         protected string astring;
+
         private int age_;
 
         public int Age
@@ -25,6 +24,7 @@ namespace ConsoleApp1
             }
         }
         public string LastName { get; private set; }
+
         public string FirstName { get; set; }
 
         public Person (string lastName)

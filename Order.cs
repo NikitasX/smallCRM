@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace ConsoleApp1
+namespace Ergasia
 {
     class Order
     {
@@ -13,8 +11,11 @@ namespace ConsoleApp1
         }
 
         public int OrderID { get; set; }
+
         public string DeliveryAdress { get; set; }
+
         public decimal OrderAmount { get; set; }
+
         public List<Product> Products;
     }
 }

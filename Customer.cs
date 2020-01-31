@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace ConsoleApp1
+namespace Ergasia
 {
     class Customer : Person
     {
@@ -11,7 +9,9 @@ namespace ConsoleApp1
             Age = 20;
             Orders = new List<Order>();
         }
+
         public int CustomerID { get; set; }
+
         public List<Order> Orders;
     }
 }
