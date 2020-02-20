@@ -4,8 +4,6 @@ namespace Ergasia
 {
     class Person
     {
-        protected string astring;
-
         private int age_;
 
         public int Age
