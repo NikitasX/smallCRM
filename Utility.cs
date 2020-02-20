@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -57,9 +58,10 @@ namespace Ergasia
         /// <returns></returns>
         public static double TwoDecimals(double randomPrice)
         {
-            var verifyTwoDecimals = randomPrice.ToString().Split('.');
+            var verifyTwoDecimals = randomPrice.ToString(CultureInfo.InvariantCulture).Split('.');
 
             if (verifyTwoDecimals.ElementAtOrDefault(1) == null) {
+
                 randomPrice = (double)GenerateRandomNumber.Next(1, 1000) +
                 Math.Round(GenerateRandomNumber.NextDouble(), 2);
 
